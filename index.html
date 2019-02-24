@@ -1,26 +1,167 @@
-<!DOCTYPE html>
-<html lang="en" >
-
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Wandered jelly monster</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+<meta charset="utf-8">
+<title>周末·初恋の滋味</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/ddfullscreenslider.js"></script>
 </head>
-
 <body>
 
-  <div class="monster">
-  <span class="body"></span>
-  <span class="eyes"></span>
+<div id="music">
+	<audio id="myAudio" autoplay="autoplay">
+		<source src="music/m.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<audio src="music/m.mp3" controls="controls" autoplay hidden="true" style="display:none;"/>
 </div>
-  
-  
+
+<div class="fixtop">
+</div>
+<div class="fixtoptext">
+	<div class="logo">
+		周末<font style="color:pink;">·</font>初恋の滋味
+	</div>
+	<div class="menu">
+		<a href="http://www.youtiy.com/">周元俊博客</a> <a href="http://market.youtiy.com/">YouTiy 市集</a> <a href="http://dh.youtiy.com/">YouTiy 便链店</a>
+	</div>
+	<div class="musicblock">
+		<img src="images/music.png" class="xwcms animation"/>
+		<p>栀子花开，So beautiful so white</P>
+	</div>
+</div>
+<section id="youtiy" class="dd_fullscreenslider">
+
+	<div class="slidewrapper">
+		<article class="slide">
+			<div class="slide1_content">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">初恋の季节</div>
+				<div class="cut"></div>
+				<div class="lovesay"  style="letter-spacing:2px">
+					<div>
+					<font class="fontsytle">那</font>年我们十八，正值青春年华，在那个甜美的季节，你是那么的可爱，一颦一笑，都刻在脑海里，挥之不去，成了我第一个会夜思梦想的人，这就是初恋。我喜欢你。怕你知道。又怕你不知道。最怕。你知道。却装作不知道。
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide">
+			<div class="slide1_content" style="background:gray;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">无止の相思</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="writing-mode:tb-rl;font-size:1.1em;margin-top:-30px;letter-spacing:5px">
+					<div>
+					<p>天涯地角有穷时，</P>
+					<p>只有相思无尽处。</P>
+					<p>眼睛为她下着雨</P>
+					<p>心却为她打着伞，</P>
+					<p>这就是——</p>
+					<p>所谓的<font class="fontsytle">爱情</font>。</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide">
+			<div class="slide1_content" style="background:#F0F0F0;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">一生の约定</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="font-size:.8em;margin-top:10px;letter-spacing:5px">
+					<div>
+					<p><font class="fontsytle">世</font>上最幸福的事莫过于暗恋变成初恋，初恋走到永远！</P>
+					<p><font class="fontsytle">最</font>终还是苦了时光，总为我们安排遇见。</P>
+					<p><font class="fontsytle">只</font>要是你，晚一点真的没关系！</P>
+					<p><font class="fontsytle">若</font>是我白发苍苍容颜迟暮，你是否还会待我青涩如初，守我岁月如故。</P>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide">
+			<div class="slide1_content" style="background:#C6E2FF;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">无奈の错过</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="writing-mode:tb-rl;font-size:1.1em;margin-top:-30px;letter-spacing:5px">
+					<div>
+					<p>你我初相识，</P>
+					<p>一个年少，</P>
+					<p>一个无知。</P>
+					<p>我看起来很<font class="fontsytle">温柔</font>， </P>
+					<p>其实我只对你低过头。</p>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<article class="slide">
+			<div class="slide1_content" style="background:#B9D3EE;">
+			</div>
+			<div class="slide1_content_text">
+				<div class="caption">独家の记忆</div>
+				<div class="cut"></div>
+				<div class="lovesay" style="font-size:1em;margin-top:-10px;letter-spacing:5px">
+					<div>
+					<font class="fontsytle">我</font>想这辈子我再也不能爱上别人了，不是她们不好，也不是你太好，只是因为我的心只认得你，它只记得你安静的眼神和嘴角的弧度，即使老去，也一丝都不模糊。仅以此篇献给我们独家珍藏，不可回去的初恋！
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
+<script>
+
+/**********************************
+author    : 周元俊
+powered by：youtiy
+my blog   ：http://www.youtiy.com/
+**********************************/
+
+var fss;
+$(function() {
+	fss = new ddfullscreenslider({
+		sliderid: 'youtiy'
+	});
+	
+	var aa = $(".slide1_content").innerHeight();
+    $(".slide1_content").css('width',aa);
+	$(".slide1_content_text").css('width',aa);
+});
+</script>
+
+
+<script>
+	$(document).ready(function() {	
+		$(".xwcms").removeClass("animation");
+		$(".xwcms").on("click", function() {
+			$(".xwcms").addClass("animation");
+			$(this).toggleClass("pause");
+			var audio = $("#music audio")[0];
+			if (audio.paused) {
+				$(".xwcms").addClass("animation");
+				audio.play();
+			} else {
+				$(".xwcms").removeClass("animation");
+				audio.pause();
+			}
+			audio.addEventListener('ended', function () {  
+				$(".xwcms").removeClass("animation");
+			}, false);
+		});
+	});
+	
+
+</script>
 
 </body>
-
 </html>
