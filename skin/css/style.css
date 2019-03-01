@@ -301,12 +301,13 @@ h3.w3l-heading {
 }
 
 .w3ls-heading h2 {
-    color: gray;
-    font-size: 1.7em;
+    color: #3b0fe3;
+    font-size: 1.2em;
     margin: 0;
     text-align: left;
     font-weight: 500;
-    letter-spacing: 1px;
+    line-height: 2em;
+    letter-spacing: 0px;
 }
 
 .w3-arrow {
@@ -353,11 +354,11 @@ h3.w3l-heading {
 }
 
 .w3ls-about-info p {
-    color: #000000;
-    font-size: 1.05em;
+    color: #FF9800;
+    font-size: 1.2em;
     margin: 0 auto;
     letter-spacing: 1px;
-    line-height: 1.8em;
+    line-height: 2.2em;
 }
 
 .w3ls-about-grids {
